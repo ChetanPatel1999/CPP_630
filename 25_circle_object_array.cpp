@@ -1,4 +1,4 @@
-//object array 
+//object array  in cpp
 #include<iostream>
 using namespace std;
 class circle
@@ -14,7 +14,8 @@ class circle
     }
     void areacal()
     {
-        area=3.141*radius*radius;
+        float pi=3.141;
+        area=pi*radius*radius;
         cout<<"arae of circle which radius "<<radius<<" = "<<area<<endl;
     }
      void circumferencecal()
@@ -27,8 +28,8 @@ int main()
 {
     int n;
     cout<<"no of circle :";
-    cin>>n;
-    circle c[n];
+    cin>>n;//5
+    circle c[n];//c[5]
     int i;
     for(i=0;i<n;i++)
     {
@@ -38,8 +39,6 @@ int main()
    {
      c[i].areacal();
      c[i].circumferencecal();
-   }
-    
-    
+   }   
     return 0;
 }
