@@ -17,6 +17,11 @@ class demo
         cout<<a<<","<<b<<endl;
         cout<<c<<","<<d<<endl;
     }
+    static void fun()
+    {
+        cout<<"hi i am static fuction"<<endl;
+        cout<<c<<","<<d<<endl;
+    }
 };
 int demo::c; // :: scop resolution operator
 int demo::d;
@@ -29,5 +34,6 @@ int main()
     d1.display();
     d2.display();
     d3.display();
+    demo::fun();
     return 0;
 }

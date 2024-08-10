@@ -17,7 +17,7 @@ class student
        rno=a;
        per=b;
     }
-    void reportcard()
+     void reportcard()
     {
         cout<<"Reportcard of student : "<<endl;
         cout<<"____________________________________"<<endl;
@@ -36,15 +36,24 @@ class student
         }
         cout<<"____________________________________"<<endl;
     }
-    void totalresult()
+    static void totalresult()
     {
+        cout<<"Class Total Fail Pass result :"<<endl;
         cout<<"total Pass :"<<totalpass<<endl;
         cout<<"total Fail :"<<totalfail<<endl;
         cout<<"_________________________________"<<endl;
     }
-    void totalstdcount()
+    static void totalstdcount()
     {
         cout<<"total student in class : "<<totalstd<<endl;
+        cout<<"_________________________________"<<endl;
+    }
+   static void classinfo()
+    {
+        cout<<"class description here "<<endl;
+        cout<<"setdata method set data of class data member"<<endl;
+        cout<<"reportcard method"<<endl;
+        cout<<"_________________________________"<<endl;
     }
 };
 int student::totalpass=0;
@@ -52,6 +61,7 @@ int student::totalfail=0;
 int student::totalstd=0;
 int main()
 {
+    student::classinfo();
     student s1,s2,s3,s4;
     s1.setdata("ram",1001,56.89);
     s2.setdata("shyam",1002,78.56);
@@ -61,7 +71,7 @@ int main()
     s2.reportcard();
     s3.reportcard();
     s4.reportcard();
-    s1.totalresult();
-    s1.totalstdcount();
+    student::totalresult();
+    student::totalstdcount();
     return 0;
 }
