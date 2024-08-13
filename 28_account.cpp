@@ -42,6 +42,7 @@ class account
             cout<<"ammount is not sufficient "<<endl;
         }
     }
+    
         void deposite(int w)
     {
         if(balance+w<=50000)
