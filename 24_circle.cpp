@@ -6,7 +6,7 @@ class circle
     float area;
     float circumference;
     public :
-    void setradius(float r)
+     circle(float r)
     {
         radius=r;
     }
@@ -23,10 +23,7 @@ class circle
 };
 int main()
 {
-    circle c1,c2,c3;
-    c1.setradius(5);
-    c2.setradius(12.67);
-    c3.setradius(7);
+    circle c1(5),c2(12.67),c3(7);
     c1.areacal();
     c1.circumferencecal();
     c2.areacal();

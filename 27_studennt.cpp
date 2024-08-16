@@ -10,13 +10,14 @@ class student
     static int totalfail;
     static int totalstd;
     public:
-    void setdata(string s,int a,float b)
+    student(string s,int a,float b)
     {
        totalstd++; 
        name=s;
        rno=a;
        per=b;
     }
+    student(){}
      void reportcard()
     {
         cout<<"Reportcard of student : "<<endl;
@@ -90,11 +91,11 @@ int student::totalstd=0;
 int main()
 {
     student::classinfo();
-    student s1,s2,s3,s4;
-    s1.setdata("ram",1001,56.89);
-    s2.setdata("shyam",1002,78.56);
-    s3.setdata("rohit",1003,90.67);
-    s4.setdata("john",1004,23.89);
+    student s5;
+    student s1("ram",1001,56.89);
+    student s2("shyam",1002,78.56);
+    student s3("rohit",1003,90.67);
+    student s4("john",1004,23.89);
     s1.reportcard();
     s2.reportcard();
     s3.reportcard();

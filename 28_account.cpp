@@ -7,7 +7,7 @@ class account
     static int totalbankbalance;
     static string bankname;
     public:
-    void createaccount(string ac,int b)
+    account(string ac,int b)
     {
         accountno=ac;
         balance=b;
@@ -61,11 +61,10 @@ int account::totalbankbalance=0;
 string account:: bankname="HDFC";
 int main()
 {
-    account ac1,ac2,ac3,ac4;
-    ac1.createaccount("1234",5000);
-    ac2.createaccount("1236",2000);
-    ac3.createaccount("1238",1000);
-    ac4.createaccount("1240",7000);
+    account ac1("1234",5000);
+    account ac2("1236",2000);
+    account ac3("1238",1000);
+    account ac4("1240",7000);
     
     ac1.displayacdetail();
     cout<<"_________________________________"<<endl;
