@@ -35,6 +35,5 @@ int main()
     ob1.m2();
     ob1.m3();
     ob1.m4();
-    
     return 0;
 }
