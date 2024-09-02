@@ -23,8 +23,8 @@ class child2:public child{
 public:
 void hi()
 {
- a=12;
- c=89;
+ a=12;//because private cant inherit
+ c=89;//because private cant inherit
 }
 };
 int main()
