@@ -1,5 +1,1 @@
-    public:
-    void great()
-    {
-        cout<<"good morning "<<endl;
-    }
+94
