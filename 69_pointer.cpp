@@ -13,5 +13,5 @@ int main()
     {
         cout<<(*(ptr+i))<<" ";
     }
-   return 0;
+    return 0;
 }
