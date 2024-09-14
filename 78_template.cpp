@@ -1,12 +1,13 @@
 #include<iostream>
 using namespace std;
+template<class T>
 class complex
 {
-    int real;
-    int image;
+    T real;
+    T image;
     public:
     complex(){}
-    complex(int a,int b)
+    complex(T a,T b)
     {
        real=a;
        image=b;
@@ -22,17 +23,19 @@ class complex
        res.image=image+obj.image;
        return res;
     }
-
-
 };
 int main()
 {
-    complex c1(12,5),c2(4,6),c3;
+    complex <int> c1(12,5),c2(4,6),c3;
     c1.display();
     c2.display();
     c3=c1.sum(c2);
     c3.display();
-   
+    complex<float> c4(12.78,5.34),c5(4.3,6.9),c6;
+    c4.display();
+    c5.display();
+    c6=c4.sum(c5);
+    c6.display();
 
     return 0;
 }
