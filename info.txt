@@ -1,0 +1,3 @@
+hello bachho i am chetan
+kaiso ho
+this is string variable data
